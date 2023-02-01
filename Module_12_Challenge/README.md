@@ -1,7 +1,7 @@
 # UFOs_JavaScript
 ### Overview
 ---
-    The purpose of this project was to create an interactable list of UFO sightings, and be able to filter those sightings based on a number of criteria. The search criteria included Date, City, State, Country, as well as the Shape of the Uknown Object. The table of data, as well as the filters, would were to be laid out in a professional, organized, and eye-catching webpage. 
+The purpose of this project was to create an interactable list of UFO sightings, and be able to filter those sightings based on a number of criteria. The search criteria included Date, City, State, Country, as well as the Shape of the Uknown Object. The table of data, as well as the filters, would were to be laid out in a professional, organized, and eye-catching webpage. 
 ## Results
 ---
 The table and its corresponding data loads beautifully, and the filter fields all respond as intended.    
