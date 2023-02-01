@@ -26,9 +26,7 @@ function buildTable(data) {
 // 1. Create a variable to keep track of all the filters as an object.
 var inputField = d3.selectAll(".text")
 var allFilters = {}
-// {
-//   console.log(d3.event.target.value);
-// })
+
 // 3. Use this function to update the filters. 
 function updateFilters() {
     // 4a. Save the element that was changed as a variable.
@@ -39,18 +37,16 @@ function updateFilters() {
     let elementId = d3.event.target.id;
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
-    if (allFilters[elementId] == undefined) {
-      allFilters[elementId] = elementOutput}
+    if (elementOutput) { 
+    allFilters[elementId] = elementOutput}
       else {
-        // allFilters = {}};
-        delete allFilters[elementId], elementOutput};
-
+        delete allFilters[elementId]
+      };
+    // 6. Call function to apply all filters and rebuild the table
+    // filterTable();
   filterTable();
-  // console.log(Object.values(allFilters));
 };
-  
-// 6. Call function to apply all filters and rebuild the table
-// filterTable();
+
   
 // // 7. Use this function to filter the table when data is entered.
 function filterTable() {
@@ -71,16 +67,16 @@ function filterTable() {
       filteredData = filteredData.filter(row => row.datetime === date);
   }
   if (city) {
-    filteredData = filteredData.filter(row => row.city === city);
+    filteredData = filteredData.filter(row => row.city === city.toLowerCase());
   }
   if (state) {
-    filteredData = filteredData.filter(row => row.state === state);
+    filteredData = filteredData.filter(row => row.state === state.toLowerCase());
   }
   if (country) {
-    filteredData = filteredData.filter(row => row.country === country);
+    filteredData = filteredData.filter(row => row.country === country.toLowerCase());
   }
   if (shape) {
-    filteredData = filteredData.filter(row => row.shape === shape);
+    filteredData = filteredData.filter(row => row.shape === shape.toLowerCase());
   }
     buildTable(filteredData);
     
