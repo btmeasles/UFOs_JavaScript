@@ -17,11 +17,13 @@ The fields are also NOT case sensitive.*</sub>
 3. The list to the right will filter the results!    
 
 4. Type in as many search criteria as you need to filter the results further:    
-<img src="static/images/search_example_1.png" width=500/>     
-<img src="static/images/search_example_2.png" width=500/>     
+![Alt text](static/images/search_example_1.png)      
+![Alt text](static/images/search_example_2.png)    
 ---    
-## Summary
----
+## Summary      
+---         
+
+
 While fun to work on, and the website and table certainly function as intended, there are some drawbacks to it that, if improved, could further satiate the curiosity of any stargazer:     
 
 * I believe the biggest drawback is that you have to guess the parameters to search for. Unless you scroll through the table and get a feel for the data, you won't know if there is a correct entry or not until you hit *Enter*, only to be greeted by an empty table.
